@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tahsin Tilawah Al-Fatihah</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Amiri&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>🌿 TAHSIN SURAT AL-FATIHAH 🌿</h1>
+        <p>Perbaiki Shalatmu dengan Memperbaiki Bacaan Surat Al-Fatihah</p>
+      </header>
+
+      <!-- Section Deskripsi Kegiatan -->
+      <section class="description-container">
+        <h2>Latar Belakang</h2>
+        <p>
+          Sahabat-sahabat yang dirahmati Allah, tahukah Anda bahwa berdasarkan
+          data dari Lembaga IIQ (Institut Ilmu Al-Qur'an), 65% umat Islam di
+          Indonesia masih buta aksara Al-Qur'an? Ini artinya, banyak dari kita
+          yang belum mampu membaca Al-Qur'an dengan baik dan benar.
+        </p>
+        <p>
+          📌 Mari kita ambil langkah kecil untuk perubahan besar! Bergabunglah
+          dalam Program Tahsin Surat Al-Fatihah yang akan membantu kita
+          mempelajari dan memperbaiki bacaan surat Al-Fatihah, surat yang
+          menjadi inti dari shalat kita.
+        </p>
+        <br />
+        <p>✨ <strong>Kenapa harus ikut?</strong></p>
+        ✔️ Surat Al-Fatihah adalah surat yang wajib dibaca dalam setiap rakaat
+        shalat. <br />✔️ Membaca Al-Qur'an dengan benar adalah kewajiban setiap
+        muslim. <br />✔️ Program ini <strong>GRATIS</strong> dan terbuka untuk
+        semua kalangan.
+
+        <p>
+          📖
+          <em
+            >"Sebaik-baik kalian adalah yang mempelajari Al-Qur'an dan
+            mengajarkannya."</em
+          >
+          (HR. Bukhari)
+        </p>
+
+        <p>
+          Mari bersama-sama kita wujudkan generasi yang cinta dan mahir membaca
+          Al-Qur'an. Jangan lewatkan kesempatan ini!
+        </p>
+      </section>
+
+      <!-- Section Biodata Pemateri -->
+      <section class="biodata-container">
+        <h2>Pemateri</h2>
+        <img src="poto.jpg" alt="fikramrusdi38" class="teacher-photo" />
+        <div class="teacher-info">
+          <h3>Fikram, S.Ag.</h3>
+          <p>
+            <!-- <strong>Pendidikan:</strong>  -->
+            S1 Ilmu Al-Qur'an dan Tafsir - STIU Wadi Mubarak
+          </p>
+          <!-- <p><strong>Pengalaman:</strong> 10+ tahun mengajar tahsin & tajwid</p>
+          <p>
+            <strong>Spesialisasi:</strong> Tahsin Al-Fatihah, Tajwid Praktis
+          </p> -->
+        </div>
+      </section>
+
+      <!-- Section Formulir Pendaftaran -->
+      <section class="container">
+        <h2>Formulir Pendaftaran</h2>
+        <p>
+          Silakan isi formulir di bawah ini untuk mengikuti kegiatan Tahsin
+          Al-Fatihah online bersama saudara Fikram.
+        </p>
+
+        <form
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbwsn0rZ3QSjI_EjJgHrcZ6iSIDn4YbiF6sE_frvdpV1FQAsVHw8Sj_sE1D19rWmKsdgNQ/exec"
+          id="my-form"
+        >
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" name="nama" required />
+
+          <label for="asal">Alamat Lengkap:</label>
+          <input type="text" id="asal" name="asal" required />
+
+          <label for="angkatan">Nomor Whatsapp:</label>
+          <input type="number" id="contact" name="contact" required />
+
+          <button type="submit">Daftar Sekarang</button>
+        </form>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        &copy; 2025 All Right Reserved | Tahsin Tilawah Al-Fatihah | Created By:
+        <a
+          style="text-decoration: none; color: inherit"
+          href="https://www.instagram.com/fikramrusdi38/"
+          target="_blank"
+          >@fikramrusdi38</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>
+<script>
+  window.addEventListener("load", function () {
+    const form = document.getElementById("my-form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = e.target.action;
+
+      fetch(action, {
+        method: "POST",
+        body: data,
+      })
+        .then(() => {
+          alert("Pendaftaran Berhasil");
+          form.reset(); // Mengosongkan form setelah submit berhasil
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    });
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
+  });
+</script>

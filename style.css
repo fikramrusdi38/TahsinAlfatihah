@@ -1,0 +1,159 @@
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Amiri&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Warna utama */
+:root {
+  --primary-color: #2c7865; /* Hijau Islami */
+  --secondary-color: #f7f5e6; /* Krem Lembut */
+  --accent-color: #d4af37; /* Emas Elegan */
+  --dark-color: #1c3a3e; /* Hijau Gelap */
+}
+
+/* Body */
+body {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Wrapper */
+.wrapper {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: var(--primary-color);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: "Amiri", serif;
+  font-size: 28px;
+}
+
+header p {
+  font-size: 16px;
+}
+
+/* Deskripsi Kegiatan */
+.description-container {
+  background: white;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Biodata Pemateri */
+.biodata-container {
+  background: white;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.teacher-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid var(--primary-color);
+}
+
+.teacher-info h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.teacher-info p {
+  font-size: 14px;
+  color: var(--dark-color);
+}
+
+/* Container Form */
+.container {
+  background: white;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+input {
+  padding: 10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Tombol */
+button {
+  background: var(--primary-color);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--accent-color);
+  color: var(--dark-color);
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--dark-color);
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+  .container,
+  .description-container,
+  .biodata-container {
+    width: 90%;
+    padding: 15px;
+  }
+}
