@@ -62,6 +62,14 @@ header p {
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  text-align: justify; /* Membuat teks rata kanan-kiri */
+}
+.description-container p {
+  line-height: 1.6; /* Menambah jarak antar baris agar lebih nyaman dibaca */
+}
+
+ul {
+  margin-left: 15px;
 }
 
 /* Biodata Pemateri */
